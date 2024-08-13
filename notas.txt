@@ -1,0 +1,47 @@
+ft.Chip(
+                        label_style=ft.TextStyle(color=ft.colors.GREY_600),
+                        selected_color=ft.colors.BLUE_100,
+                        on_select=on_chip_selected,
+                        label=ft.Text("Rectangulo"),
+                        
+                    ),
+                    ft.Chip(
+                        label_style=ft.TextStyle(color=ft.colors.GREY_600),
+                        selected_color=ft.colors.BLUE_100,
+                        on_select=on_chip_selected,
+                        label=ft.Text("Redondo"),
+                        
+                        
+                    ),
+                    ft.Chip(
+                        label_style=ft.TextStyle(color=ft.colors.GREY_600),
+                        selected_color=ft.colors.BLUE_100,
+                        on_select=on_chip_selected,
+                        label=ft.Text("Cuadrado"),
+                    )
+
+
+
+
+
+
+
+
+
+
+
+
+
+        if self.tipo_busqueda.value == "Todos":
+            # Mostrar la tabla principal
+            self.data_table_select.visible = True
+            self.data.content.controls = [self.data_table_select]
+            self.update()
+            return  
+
+
+
+
+
+            if self.tipo_busqueda.value and self.tipo_busqueda.value != "Todos":
+            busqueda_params['tipo'] = self.tipo_busqueda.value
